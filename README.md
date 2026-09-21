@@ -1,17 +1,55 @@
-# FRH Construction & Remodeling — Website Mockup
+# Muebleria 3R
 
-Static front-end mockup for FRH Construction & Remodeling.
+Production website for **Muebleria 3R**.
 
-## Included
-- Responsive one-page layout
-- Services based on the supplied business card
-- Project gallery using supplied client work photography
-- Smooth reveal and hover animations
-- Click-to-call contact actions
-- Contact/estimate form UI in preview mode
+## Business
+
+- Custom Cabinetry & Furniture
+- Bathroom Remodeling
+- General Construction & Remodeling
+- Service area: Los Angeles and surrounding communities within approximately 80 miles
+- Phone: 909-437-3796
+- Email: franro1988@gmail.com
+- Domain: https://muebleria3r.com
+
+## Site features
+
+- English-first site with full EN / ES language switcher
+- Responsive project gallery using real client work
+- Project walkthrough video gallery
+- Social links for Instagram and Facebook
+- Click-to-call actions
+- Real estimate/contact form
+- Accessible navigation and modal galleries
+- SEO metadata, structured data, robots.txt, and sitemap.xml
+- Vercel production configuration
 
 ## Contact form
-The estimate form is intentionally **not connected to a backend**. Submission is intercepted in `script.js` and only shows a preview-mode status message.
 
-## Local preview
-Open `index.html` directly or serve the folder with any static HTTP server.
+The form submits to `/api/contact` and uses Resend to deliver leads to Francisco.
+
+Required Vercel environment variable:
+
+```
+RESEND_API_KEY=re_...
+```
+
+Optional overrides:
+
+```
+CONTACT_TO_EMAIL=franro1988@gmail.com
+RESEND_FROM_EMAIL=Muebleria 3R <website@muebleria3r.com>
+```
+
+Before using `website@muebleria3r.com` as the sender, verify `muebleria3r.com` with Resend.
+
+## Media
+
+Original project media lives under:
+
+```
+assets/media/images/
+assets/media/videos/
+```
+
+The site intentionally preserves the source files and references them directly from the gallery/video data in `script.js`.
