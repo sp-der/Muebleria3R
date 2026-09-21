@@ -276,7 +276,6 @@ const categoryPosters = {
 
 const videoItems = [
   { src: "assets/media/videos/1000051202.MP4", category: "kitchen", en: "Kitchen Project Walkthrough", es: "Recorrido de Proyecto de Cocina" },
-  { src: "assets/media/videos/1000059123.MP4", category: "kitchen", en: "Finished Kitchen Walkthrough", es: "Recorrido de Cocina Terminada" },
   { src: "assets/media/videos/1000095718.MP4", category: "construction", en: "Interior Finish Detail", es: "Detalle de Acabado Interior" },
   { src: "assets/media/videos/1000097757.MP4", category: "construction", en: "Interior Remodeling Detail", es: "Detalle de Remodelación Interior" },
   { src: "assets/media/videos/1000106810.MP4", category: "construction", en: "Outdoor Kitchen Walkthrough", es: "Recorrido de Cocina Exterior" },
