@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://muebleria3r.com/sitemap.xml
