@@ -1211,14 +1211,12 @@ h1, h2, h3, p { text-wrap: balance; }
 
   .hero {
     height: auto;
-    min-height: 760px;
-    padding: 130px 0 165px;
-    align-items: center;
+    min-height: 720px;
+    padding: 98px 0 150px;
+    align-items: flex-start;
   }
+  .hero-content { padding-top: 18px; }
   .hero-media img { object-position: 46% center; }
-  .hero-brand { margin-bottom: 16px; }
-  .hero-house { width: 40px; height: 40px; }
-  .hero-wordmark { font-size: 2rem; }
   .hero h1 { font-size: clamp(3.5rem, 17vw, 5rem); line-height: .84; }
   .hero-lede { font-size: .96rem; }
   .hero-bottom {
