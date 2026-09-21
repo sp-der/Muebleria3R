@@ -404,25 +404,47 @@ function renderGallery() {
   observeReveals();
 }
 
+function primeVideoThumbnail(video) {
+  if (!video) return;
+
+  const seekToPreviewFrame = () => {
+    try {
+      if (!Number.isFinite(video.duration) || video.duration <= 0.2) return;
+      const target = Math.min(1.5, Math.max(0.15, video.duration * 0.12));
+      video.currentTime = Math.min(target, Math.max(0.1, video.duration - 0.1));
+    } catch (error) {
+      // The browser will fall back to the video's first available frame.
+    }
+  };
+
+  video.addEventListener("loadedmetadata", seekToPreviewFrame, { once: true });
+  video.addEventListener("seeked", () => video.pause(), { once: true });
+
+  if (video.readyState >= 1) seekToPreviewFrame();
+}
+
 function renderVideos() {
   videoGrid.innerHTML = "";
 
-  videoItems.forEach((item, index) => {
+  videoItems.slice(0, videosVisible).forEach((item) => {
     const card = document.createElement("article");
     card.className = "video-card reveal";
-    if (index >= videosVisible) card.classList.add("is-hidden");
 
     const button = document.createElement("button");
     button.type = "button";
     button.setAttribute("aria-label", item[currentLang]);
     button.innerHTML = `
-      <span class="video-poster" style="background-image:url('${categoryPosters[item.category]}')"></span>
+      <video class="video-poster" muted playsinline preload="metadata" aria-hidden="true">
+        <source src="${item.src}" type="video/mp4" />
+      </video>
       <span class="video-play" aria-hidden="true">▶</span>
       <span class="video-copy">
         <span>${videoCategoryLabel(item.category)}</span>
         <strong>${item[currentLang]}</strong>
       </span>
     `;
+
+    primeVideoThumbnail(button.querySelector(".video-poster"));
     button.addEventListener("click", () => openVideoModal(item));
     card.appendChild(button);
     videoGrid.appendChild(card);
