@@ -1212,17 +1212,23 @@ h1, h2, h3, p { text-wrap: balance; }
   .hero {
     height: auto;
     min-height: 720px;
-    padding: 98px 0 150px;
-    align-items: flex-start;
+    padding: 98px 0 34px;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
   }
   .hero-content { padding-top: 18px; }
   .hero-media img { object-position: 46% center; }
   .hero h1 { font-size: clamp(3.5rem, 17vw, 5rem); line-height: .84; }
   .hero-lede { font-size: .96rem; }
   .hero-bottom {
-    bottom: 22px;
+    position: relative;
+    left: auto;
+    bottom: auto;
+    transform: none;
+    margin-top: 30px;
     flex-direction: column;
-    gap: 8px;
+    gap: 9px;
   }
   .hero-bottom > div { gap: 0; }
   .hero-social div { gap: 12px; }
