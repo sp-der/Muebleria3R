@@ -1,20 +1,58 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="FRH Construction & Remodeling — kitchen cabinets, bathroom remodeling, drywall, texture, paint, and residential renovation work." />
-  <title>FRH Construction & Remodeling</title>
+  <meta name="theme-color" content="#171513" />
+  <meta name="description" content="Muebleria 3R creates custom cabinetry and furniture, bathroom remodels, and residential construction projects throughout Los Angeles and surrounding areas." />
+  <link rel="canonical" href="https://muebleria3r.com/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Muebleria 3R | Custom Cabinetry, Furniture & Remodeling" />
+  <meta property="og:description" content="Custom cabinetry, furniture, bathroom remodeling and general residential construction serving Los Angeles and surrounding areas." />
+  <meta property="og:url" content="https://muebleria3r.com/" />
+  <meta property="og:image" content="https://muebleria3r.com/assets/modern-kitchen.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <title>Muebleria 3R | Custom Cabinetry, Furniture & Remodeling</title>
+
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Muebleria 3R",
+    "url": "https://muebleria3r.com/",
+    "telephone": "+1-909-437-3796",
+    "email": "franro1988@gmail.com",
+    "image": "https://muebleria3r.com/assets/modern-kitchen.webp",
+    "areaServed": "Los Angeles and surrounding communities within approximately 80 miles",
+    "sameAs": [
+      "https://www.instagram.com/franrodriguez1988/",
+      "https://www.facebook.com/francisco.rodriguez.hernandez.367848"
+    ],
+    "knowsAbout": [
+      "Custom cabinetry",
+      "Custom furniture",
+      "Bathroom remodeling",
+      "Residential remodeling",
+      "General construction"
+    ]
+  }
+  </script>
 </head>
+
 <body>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+
   <header class="site-header" id="top">
     <div class="nav-shell">
-      <a class="brand" href="#top" aria-label="FRH Construction & Remodeling home">
+      <a class="brand" href="#top" aria-label="Muebleria 3R home">
         <span class="brand-mark" aria-hidden="true">
           <svg viewBox="0 0 64 64" role="img">
             <path d="M7 31 32 10l25 21" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
@@ -22,53 +60,111 @@
             <path d="M29 53V39h9v14" fill="none" stroke="currentColor" stroke-width="4"/>
           </svg>
         </span>
-        <span class="brand-copy"><strong>FRH</strong><span>Construction & Remodeling</span></span>
+        <span class="brand-copy">
+          <strong>Muebleria <em>3R</em></strong>
+          <span data-i18n="brandTag">Custom work • Remodeling</span>
+        </span>
       </a>
+
       <nav class="desktop-nav" aria-label="Primary navigation">
-        <a href="#services">Services</a>
-        <a href="#work">Our Work</a>
-        <a href="#contact">Contact</a>
+        <a href="#services" data-i18n="navServices">Services</a>
+        <a href="#work" data-i18n="navWork">Our Work</a>
+        <a href="#videos" data-i18n="navVideos">Videos</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
       </nav>
-      <a class="nav-call" href="tel:+19094373796" aria-label="Call FRH Construction and Remodeling">909-437-3796</a>
-      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+
+      <div class="nav-actions">
+        <div class="language-switch" role="group" aria-label="Language">
+          <button class="lang-btn active" type="button" data-lang="en" aria-pressed="true">EN</button>
+          <span>/</span>
+          <button class="lang-btn" type="button" data-lang="es" aria-pressed="false">ES</button>
+        </div>
+        <a class="nav-call" href="tel:+19094373796">909-437-3796</a>
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
+
     <div class="mobile-menu" aria-hidden="true">
-      <a href="#services">Services</a>
-      <a href="#work">Our Work</a>
-      <a href="#contact">Contact</a>
-      <a class="mobile-call" href="tel:+19094373796">Call 909-437-3796</a>
+      <a href="#services" data-i18n="navServices">Services</a>
+      <a href="#work" data-i18n="navWork">Our Work</a>
+      <a href="#videos" data-i18n="navVideos">Videos</a>
+      <a href="#contact" data-i18n="navContact">Contact</a>
+      <a class="mobile-call" href="tel:+19094373796" data-i18n="callNow">Call 909-437-3796</a>
     </div>
   </header>
 
-  <main>
+  <main id="main">
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-media" aria-hidden="true">
-        <img src="assets/modern-kitchen.webp" alt="" />
+        <img src="assets/modern-kitchen.webp" alt="" fetchpriority="high" />
       </div>
       <div class="hero-overlay"></div>
+
       <div class="hero-content shell">
-        <div class="eyebrow reveal">Construction · Remodeling · Finish Work</div>
-        <h1 id="hero-title" class="reveal delay-1">Built with care.<br><span>Finished with purpose.</span></h1>
-        <p class="hero-lede reveal delay-2">Residential remodeling and craftsmanship for kitchens, bathrooms, cabinetry, drywall, texture, and paint.</p>
-        <p class="hero-es reveal delay-2">Construcción y remodelación residencial con atención al detalle.</p>
-        <div class="hero-actions reveal delay-3">
-          <a class="btn btn-primary" href="#contact">Request an Estimate</a>
-          <a class="btn btn-ghost" href="#work">View Recent Work</a>
+        <div class="hero-brand reveal">
+          <span class="hero-house" aria-hidden="true">
+            <svg viewBox="0 0 64 64">
+              <path d="M7 31 32 10l25 21" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M15 28v25h34V28" fill="none" stroke="currentColor" stroke-width="5" stroke-linejoin="round"/>
+              <path d="M29 53V39h9v14" fill="none" stroke="currentColor" stroke-width="4"/>
+            </svg>
+          </span>
+          <span class="hero-wordmark">Muebleria <b>3R</b></span>
+        </div>
+
+        <div class="eyebrow reveal delay-1" data-i18n="heroEyebrow">Custom craftsmanship for your home</div>
+        <h1 id="hero-title" class="reveal delay-1">
+          <span data-i18n="heroLine1">Custom cabinetry.</span>
+          <span data-i18n="heroLine2">Furniture.</span>
+          <span class="accent" data-i18n="heroLine3">Remodeling.</span>
+        </h1>
+
+        <p class="hero-lede reveal delay-2" data-i18n="heroText">
+          Custom-built cabinetry and furniture, bathroom remodels, and residential construction shaped around your space.
+        </p>
+
+        <div class="hero-actions reveal delay-2">
+          <a class="btn btn-primary" href="#contact" data-i18n="estimate">Request an Estimate</a>
+          <a class="btn btn-ghost" href="#work" data-i18n="viewWork">View Our Work</a>
+        </div>
+
+        <div class="service-area-pill reveal delay-3">
+          <span class="pin" aria-hidden="true">⌖</span>
+          <span data-i18n="serviceAreaShort">Los Angeles + surrounding areas within ~80 miles</span>
         </div>
       </div>
+
       <div class="hero-bottom shell reveal delay-3">
-        <div><span>Owner / Contact</span><strong>Francisco Rodriguez Hernandez</strong></div>
-        <div><span>Phone</span><a href="tel:+19094373796">909-437-3796</a></div>
+        <div>
+          <span data-i18n="contactLabel">Contact</span>
+          <strong>Francisco Rodriguez Hernandez</strong>
+        </div>
+        <div>
+          <span data-i18n="phoneLabel">Phone</span>
+          <a href="tel:+19094373796">909-437-3796</a>
+        </div>
+        <div class="hero-social">
+          <span data-i18n="followLabel">Follow</span>
+          <div>
+            <a href="https://www.instagram.com/franrodriguez1988/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
+            <a href="https://www.facebook.com/francisco.rodriguez.hernandez.367848" target="_blank" rel="noopener noreferrer" aria-label="Facebook">Facebook</a>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="intro shell section-pad reveal">
-      <div class="section-kicker">FRH Construction & Remodeling</div>
+      <span class="section-kicker" data-i18n="aboutKicker">What we build</span>
       <div class="intro-grid">
-        <h2>Renovation work that feels intentional from the first cut to the final coat.</h2>
-        <p>From custom cabinet work and room updates to drywall, texture, and paint, FRH focuses on clean execution and finished spaces that look right at home.</p>
+        <h2 data-i18n="aboutTitle">Made for the space you actually have, not pulled from a catalog.</h2>
+        <div>
+          <p data-i18n="aboutText">
+            Muebleria 3R combines custom woodwork with residential remodeling. From one-of-a-kind cabinetry and furniture to bathrooms and complete improvement projects, each job is approached around the client, the room, and the finish.
+          </p>
+          <a class="text-link dark-link" href="#services"><span data-i18n="exploreServices">Explore services</span> <span aria-hidden="true">↘</span></a>
+        </div>
       </div>
     </section>
 
@@ -76,50 +172,73 @@
       <div class="shell">
         <div class="section-heading reveal">
           <div>
-            <span class="section-kicker">Services</span>
-            <h2>Practical craftsmanship for the spaces you use every day.</h2>
+            <span class="section-kicker light" data-i18n="servicesKicker">Services</span>
+            <h2 data-i18n="servicesTitle">Custom work, thoughtful remodeling, complete residential improvements.</h2>
           </div>
-          <p>Servicios de construcción y remodelación para proyectos residenciales.</p>
+          <p data-i18n="servicesIntro">
+            Three areas of work, one standard: clean execution and attention to the details that make the finished space feel complete.
+          </p>
         </div>
 
-        <div class="service-grid">
-          <article class="service-card reveal">
-            <span class="service-num">01</span>
-            <h3>Bathroom Remodeling</h3>
-            <p>Remodelación de Baños</p>
-            <span class="service-line"></span>
+        <div class="service-showcase">
+          <article class="service-feature reveal">
+            <div class="service-photo">
+              <img src="assets/custom-furniture.webp" alt="Custom wood sectional furniture built for a room" loading="lazy" />
+            </div>
+            <div class="service-copy">
+              <span class="service-num">01</span>
+              <h3 data-i18n="service1Title">Custom Cabinetry & Furniture</h3>
+              <p data-i18n="service1Text">Made-to-fit kitchen cabinets, built-ins, shelving, storage, doors, tables, seating, and custom furniture designed around your space.</p>
+              <a href="#work" data-filter-link="cabinetry"><span data-i18n="viewCabinetry">View cabinetry & furniture</span> <b>↗</b></a>
+            </div>
           </article>
-          <article class="service-card reveal delay-1">
-            <span class="service-num">02</span>
-            <h3>Kitchen Cabinets</h3>
-            <p>Gabinetes de Cocina</p>
-            <span class="service-line"></span>
+
+          <article class="service-feature reverse reveal">
+            <div class="service-photo">
+              <img src="assets/media/images/1000053804.JPG" alt="Tiled bathroom shower with glass enclosure" loading="lazy" />
+            </div>
+            <div class="service-copy">
+              <span class="service-num">02</span>
+              <h3 data-i18n="service2Title">Bathroom Remodeling</h3>
+              <p data-i18n="service2Text">Bathroom renovations including tile, showers, vanities, glass enclosures, finish work, and complete room transformations.</p>
+              <a href="#work" data-filter-link="bathroom"><span data-i18n="viewBathrooms">View bathroom projects</span> <b>↗</b></a>
+            </div>
           </article>
-          <article class="service-card reveal delay-2">
-            <span class="service-num">03</span>
-            <h3>Drywall & Texture</h3>
-            <p>Drywall y Textura</p>
-            <span class="service-line"></span>
-          </article>
-          <article class="service-card reveal delay-3">
-            <span class="service-num">04</span>
-            <h3>Paint & Finishes</h3>
-            <p>Pintura y Acabados</p>
-            <span class="service-line"></span>
+
+          <article class="service-feature reveal">
+            <div class="service-photo">
+              <img src="assets/outdoor-kitchen.webp" alt="Outdoor kitchen construction with built-in grill and cabinetry" loading="lazy" />
+            </div>
+            <div class="service-copy">
+              <span class="service-num">03</span>
+              <h3 data-i18n="service3Title">General Construction & Remodeling</h3>
+              <p data-i18n="service3Text">Residential construction and improvement projects including kitchens, drywall, paint, flooring, finish work, outdoor spaces, and room renovations.</p>
+              <a href="#work" data-filter-link="construction"><span data-i18n="viewConstruction">View construction work</span> <b>↗</b></a>
+            </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="feature-work shell section-pad reveal">
-      <div class="feature-image">
-        <img src="assets/outdoor-kitchen.webp" alt="Covered outdoor kitchen with built-in grill, stone finish, cabinetry, and bar counter" loading="lazy" />
-      </div>
-      <div class="feature-copy">
-        <span class="section-kicker">Featured Project</span>
-        <h2>Spaces made to work beautifully.</h2>
-        <p>Thoughtful material choices, clean lines, and detailed finish work come together in every project.</p>
-        <a class="text-link" href="#work">Explore the project gallery <span aria-hidden="true">↗</span></a>
+    <section class="featured-project section-pad">
+      <div class="shell featured-grid">
+        <div class="featured-media reveal">
+          <img src="assets/outdoor-kitchen.webp" alt="Finished covered outdoor kitchen with grill, cabinetry, counters and stonework" loading="lazy" />
+          <button class="play-feature" type="button" data-video="assets/media/videos/1000106810.MP4" data-video-title="Outdoor Kitchen Walkthrough" aria-label="Play outdoor kitchen walkthrough">
+            <span class="play-icon" aria-hidden="true">▶</span>
+            <span data-i18n="watchWalkthrough">Watch walkthrough</span>
+          </button>
+        </div>
+        <div class="featured-copy reveal delay-1">
+          <span class="section-kicker" data-i18n="featuredKicker">Featured project</span>
+          <h2 data-i18n="featuredTitle">Built for more than looking good.</h2>
+          <p data-i18n="featuredText">The best custom work solves a practical need and becomes part of how the space is used every day. This outdoor kitchen combines structure, finishes, storage, counters, and appliances into one complete build.</p>
+          <div class="featured-points">
+            <span data-i18n="featurePoint1">Custom layout</span>
+            <span data-i18n="featurePoint2">Integrated cabinetry</span>
+            <span data-i18n="featurePoint3">Finish & stone work</span>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -127,103 +246,180 @@
       <div class="shell">
         <div class="section-heading reveal">
           <div>
-            <span class="section-kicker">Recent Work</span>
-            <h2>Built, remodeled, and finished by hand.</h2>
+            <span class="section-kicker" data-i18n="workKicker">Project gallery</span>
+            <h2 data-i18n="workTitle">Real work. Real homes. Different kinds of projects.</h2>
           </div>
-          <p>A selection of cabinetry, kitchen, outdoor, and custom woodwork projects.</p>
+          <p data-i18n="workIntro">Browse finished work, in-progress details, custom cabinetry, kitchens, bathrooms, doors, furniture, and construction projects.</p>
         </div>
 
-        <div class="gallery-grid">
-          <figure class="gallery-item gallery-wide reveal">
-            <img src="assets/modern-kitchen.webp" alt="Modern kitchen remodel with dark upper cabinets and muted green lower cabinets" loading="lazy" />
-            <figcaption><span>Kitchen Remodeling</span><strong>Modern Kitchen Update</strong></figcaption>
-          </figure>
-          <figure class="gallery-item reveal delay-1">
-            <img src="assets/custom-furniture.webp" alt="Custom wood sectional seating with patterned cushions" loading="lazy" />
-            <figcaption><span>Custom Woodwork</span><strong>Built-In Seating</strong></figcaption>
-          </figure>
-          <figure class="gallery-item reveal delay-2">
-            <img src="assets/wood-cabinetry.webp" alt="Warm wood cabinetry with granite countertop and sink" loading="lazy" />
-            <figcaption><span>Cabinetry</span><strong>Custom Storage & Finish</strong></figcaption>
-          </figure>
-          <figure class="gallery-item gallery-wide reveal">
-            <img src="assets/outdoor-kitchen.webp" alt="Outdoor kitchen and grill area under a wood patio cover" loading="lazy" />
-            <figcaption><span>Outdoor Living</span><strong>Covered Kitchen Build</strong></figcaption>
-          </figure>
-          <figure class="gallery-item gallery-square reveal delay-1">
-            <img src="assets/cabinetry-showcase.webp" alt="Collage of detailed wood cabinetry and door craftsmanship" loading="lazy" />
-            <figcaption><span>Detail Work</span><strong>Cabinetry Showcase</strong></figcaption>
-          </figure>
+        <div class="filter-row reveal" aria-label="Project filters">
+          <button class="filter-btn active" type="button" data-filter="all" data-i18n="filterAll">All</button>
+          <button class="filter-btn" type="button" data-filter="cabinetry" data-i18n="filterCabinetry">Cabinetry & Furniture</button>
+          <button class="filter-btn" type="button" data-filter="kitchen" data-i18n="filterKitchen">Kitchens</button>
+          <button class="filter-btn" type="button" data-filter="bathroom" data-i18n="filterBathroom">Bathrooms</button>
+          <button class="filter-btn" type="button" data-filter="construction" data-i18n="filterConstruction">Construction</button>
+        </div>
+
+        <div class="gallery-grid" id="gallery-grid" aria-live="polite"></div>
+
+        <div class="gallery-more-wrap">
+          <button class="btn btn-outline" id="gallery-more" type="button" data-i18n="loadMore">Show More Projects</button>
         </div>
       </div>
     </section>
 
-    <section class="cta-band">
-      <div class="shell cta-inner reveal">
-        <div>
-          <span class="section-kicker light">Have a project in mind?</span>
-          <h2>Let’s talk about the space you want to improve.</h2>
+    <section class="videos section-pad" id="videos">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <div>
+            <span class="section-kicker light" data-i18n="videoKicker">Project walkthroughs</span>
+            <h2 data-i18n="videoTitle">See the work from inside the space.</h2>
+          </div>
+          <p data-i18n="videoIntro">Walkthroughs, finished details, and progress footage from Muebleria 3R projects.</p>
         </div>
-        <a class="btn btn-light" href="tel:+19094373796">Call 909-437-3796</a>
+
+        <div class="video-grid" id="video-grid"></div>
+
+        <div class="gallery-more-wrap">
+          <button class="btn btn-outline-light" id="video-more" type="button" data-i18n="moreVideos">Show More Videos</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="process section-pad">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <div>
+            <span class="section-kicker" data-i18n="processKicker">How it starts</span>
+            <h2 data-i18n="processTitle">Tell us what you want to change. We’ll take it from there.</h2>
+          </div>
+        </div>
+
+        <div class="process-grid">
+          <article class="process-card reveal">
+            <span>01</span>
+            <h3 data-i18n="process1Title">Share the project</h3>
+            <p data-i18n="process1Text">Send the type of work, your city or ZIP code, and a short description of what you have in mind.</p>
+          </article>
+          <article class="process-card reveal delay-1">
+            <span>02</span>
+            <h3 data-i18n="process2Title">Talk through the details</h3>
+            <p data-i18n="process2Text">Francisco can follow up directly to understand the space, scope, measurements, and finish you are looking for.</p>
+          </article>
+          <article class="process-card reveal delay-2">
+            <span>03</span>
+            <h3 data-i18n="process3Title">Plan the next step</h3>
+            <p data-i18n="process3Text">If the project is a fit, the next step can be scheduled directly with you.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="service-area section-pad">
+      <div class="shell service-area-grid">
+        <div class="area-copy reveal">
+          <span class="section-kicker light" data-i18n="areaKicker">Service area</span>
+          <h2 data-i18n="areaTitle">Serving Los Angeles and surrounding communities.</h2>
+          <p data-i18n="areaText">Muebleria 3R takes on projects throughout the Los Angeles area and surrounding communities within approximately an 80-mile radius.</p>
+          <a class="btn btn-light" href="#contact" data-i18n="checkArea">Ask About Your Area</a>
+        </div>
+        <div class="area-graphic reveal delay-1" aria-hidden="true">
+          <div class="area-ring ring-1"></div>
+          <div class="area-ring ring-2"></div>
+          <div class="area-ring ring-3"></div>
+          <div class="area-center">
+            <strong>LA</strong>
+            <span>~80 mi</span>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="contact section-pad" id="contact">
       <div class="shell contact-grid">
         <div class="contact-info reveal">
-          <span class="section-kicker">Contact</span>
-          <h2>Request an estimate.</h2>
-          <p>Tell us a little about your project and the best way to reach you.</p>
+          <span class="section-kicker" data-i18n="contactKicker">Request an estimate</span>
+          <h2 data-i18n="contactTitle">Tell Francisco about your project.</h2>
+          <p data-i18n="contactText">Send the basics below. Your request will go directly to Muebleria 3R so Francisco can reach out to you.</p>
 
           <div class="contact-card">
-            <div class="contact-avatar" aria-hidden="true">FRH</div>
+            <div class="contact-avatar" aria-hidden="true">3R</div>
             <div>
               <span>Francisco Rodriguez Hernandez</span>
               <a href="tel:+19094373796">909-437-3796</a>
+              <a href="mailto:franro1988@gmail.com">franro1988@gmail.com</a>
             </div>
           </div>
 
-          <div class="contact-services">
-            <span>Bathroom Remodeling</span>
-            <span>Kitchen Cabinets</span>
-            <span>Drywall</span>
-            <span>Texture</span>
-            <span>Paint</span>
+          <div class="social-links">
+            <a href="https://www.instagram.com/franrodriguez1988/" target="_blank" rel="noopener noreferrer">
+              <span aria-hidden="true">◎</span> Instagram
+            </a>
+            <a href="https://www.facebook.com/francisco.rodriguez.hernandez.367848" target="_blank" rel="noopener noreferrer">
+              <span aria-hidden="true">f</span> Facebook
+            </a>
           </div>
         </div>
 
-        <form class="contact-form reveal delay-1" id="estimate-form">
+        <form class="contact-form reveal delay-1" id="estimate-form" novalidate>
+          <input class="hp-field" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <input type="hidden" name="startedAt" id="started-at" />
+
           <div class="form-row">
             <label>
-              <span>Name</span>
-              <input type="text" name="name" autocomplete="name" placeholder="Your name" required />
+              <span data-i18n="formName">Name</span>
+              <input type="text" name="name" autocomplete="name" data-i18n-placeholder="formNamePlaceholder" placeholder="Your name" required />
             </label>
             <label>
-              <span>Phone</span>
-              <input type="tel" name="phone" autocomplete="tel" placeholder="(555) 555-5555" required />
+              <span data-i18n="formPhone">Phone</span>
+              <input type="tel" name="phone" autocomplete="tel" data-i18n-placeholder="formPhonePlaceholder" placeholder="(555) 555-5555" required />
             </label>
           </div>
+
+          <div class="form-row">
+            <label>
+              <span data-i18n="formEmail">Email</span>
+              <input type="email" name="email" autocomplete="email" data-i18n-placeholder="formEmailPlaceholder" placeholder="you@example.com" />
+            </label>
+            <label>
+              <span data-i18n="formCity">Project City / ZIP</span>
+              <input type="text" name="cityZip" autocomplete="postal-code" data-i18n-placeholder="formCityPlaceholder" placeholder="Los Angeles, CA" required />
+            </label>
+          </div>
+
+          <div class="form-row">
+            <label>
+              <span data-i18n="formProject">Project Type</span>
+              <select name="projectType" required>
+                <option value="" data-i18n="selectService">Select a service</option>
+                <option value="Custom Cabinetry & Furniture" data-i18n="optionCabinetry">Custom Cabinetry & Furniture</option>
+                <option value="Bathroom Remodeling" data-i18n="optionBathroom">Bathroom Remodeling</option>
+                <option value="Kitchen / Residential Remodeling" data-i18n="optionKitchen">Kitchen / Residential Remodeling</option>
+                <option value="General Construction" data-i18n="optionConstruction">General Construction</option>
+                <option value="Other" data-i18n="optionOther">Other</option>
+              </select>
+            </label>
+
+            <label>
+              <span data-i18n="formContactMethod">Preferred Contact</span>
+              <select name="preferredContact">
+                <option value="Phone call" data-i18n="optionPhoneCall">Phone call</option>
+                <option value="Text message" data-i18n="optionText">Text message</option>
+                <option value="Email" data-i18n="optionEmail">Email</option>
+              </select>
+            </label>
+          </div>
+
           <label>
-            <span>Email <small>optional</small></span>
-            <input type="email" name="email" autocomplete="email" placeholder="you@example.com" />
+            <span data-i18n="formDetails">Project Details</span>
+            <textarea name="message" rows="6" data-i18n-placeholder="formDetailsPlaceholder" placeholder="What would you like to have built or remodeled?" required></textarea>
           </label>
-          <label>
-            <span>Project Type</span>
-            <select name="project">
-              <option value="">Select a service</option>
-              <option>Bathroom Remodeling</option>
-              <option>Kitchen Cabinets</option>
-              <option>Drywall & Texture</option>
-              <option>Paint & Finishes</option>
-              <option>Other Remodeling</option>
-            </select>
-          </label>
-          <label>
-            <span>Project Details</span>
-            <textarea name="message" rows="5" placeholder="Tell us what you’re looking to have done..."></textarea>
-          </label>
-          <button class="btn btn-primary form-submit" type="submit">Send Request</button>
-          <p class="form-note">Mockup form only. No information is sent yet.</p>
+
+          <button class="btn btn-primary form-submit" type="submit">
+            <span class="submit-label" data-i18n="sendRequest">Send Request</span>
+            <span class="submit-loading" data-i18n="sending">Sending…</span>
+          </button>
+          <p class="form-privacy" data-i18n="formPrivacy">Your information is only used so Muebleria 3R can respond to your project request.</p>
           <div class="form-status" role="status" aria-live="polite"></div>
         </form>
       </div>
@@ -231,21 +427,52 @@
   </main>
 
   <footer class="site-footer">
-    <div class="shell footer-inner">
-      <a class="brand footer-brand" href="#top">
-        <span class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 64 64"><path d="M7 31 32 10l25 21" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 28v25h34V28" fill="none" stroke="currentColor" stroke-width="5" stroke-linejoin="round"/></svg>
-        </span>
-        <span class="brand-copy"><strong>FRH</strong><span>Construction & Remodeling</span></span>
-      </a>
-      <p>Let us be part of your renovation and construction projects.</p>
-      <p class="footer-es">Permítanos ser parte de sus proyectos de remodelación y construcción.</p>
-      <div class="footer-bottom">
-        <span>© <span id="year"></span> FRH Construction & Remodeling</span>
+    <div class="shell footer-grid">
+      <div>
+        <a class="brand footer-brand" href="#top">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 64 64">
+              <path d="M7 31 32 10l25 21" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M15 28v25h34V28" fill="none" stroke="currentColor" stroke-width="5" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span class="brand-copy">
+            <strong>Muebleria <em>3R</em></strong>
+            <span data-i18n="brandTag">Custom work • Remodeling</span>
+          </span>
+        </a>
+        <p data-i18n="footerText">Custom cabinetry, furniture, bathrooms, and residential construction throughout Los Angeles and surrounding areas.</p>
+      </div>
+
+      <div class="footer-links">
+        <strong data-i18n="footerServices">Services</strong>
+        <a href="#services" data-i18n="service1Title">Custom Cabinetry & Furniture</a>
+        <a href="#services" data-i18n="service2Title">Bathroom Remodeling</a>
+        <a href="#services" data-i18n="service3Title">General Construction & Remodeling</a>
+      </div>
+
+      <div class="footer-links">
+        <strong data-i18n="footerContact">Contact</strong>
         <a href="tel:+19094373796">909-437-3796</a>
+        <a href="mailto:franro1988@gmail.com">franro1988@gmail.com</a>
+        <a href="https://www.instagram.com/franrodriguez1988/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.facebook.com/francisco.rodriguez.hernandez.367848" target="_blank" rel="noopener noreferrer">Facebook</a>
       </div>
     </div>
+
+    <div class="shell footer-bottom">
+      <span>© <span id="year"></span> Muebleria 3R</span>
+      <span data-i18n="footerArea">Los Angeles + surrounding areas · ~80 mile service radius</span>
+    </div>
   </footer>
+
+  <div class="media-modal" id="media-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Project media">
+    <button class="modal-close" type="button" aria-label="Close">×</button>
+    <button class="modal-prev" type="button" aria-label="Previous image">‹</button>
+    <div class="modal-stage"></div>
+    <button class="modal-next" type="button" aria-label="Next image">›</button>
+    <div class="modal-caption"></div>
+  </div>
 
   <script src="script.js"></script>
 </body>
