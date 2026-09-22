@@ -10,7 +10,7 @@ Production website for **Muebleria 3R**.
 - Service area: Los Angeles and surrounding communities within approximately 80 miles
 - Phone: 909-437-3796
 - Email: franro1988@gmail.com
-- Domain: https://muebleria3r.com
+- Domain: https://www.muebleria3r.com
 
 ## Site features
 
@@ -28,20 +28,15 @@ Production website for **Muebleria 3R**.
 
 The form submits to `/api/contact` and uses Resend to deliver leads to Francisco.
 
-Required Vercel environment variable:
+Required Vercel environment variables:
 
 ```
 RESEND_API_KEY=re_...
-```
-
-Optional overrides:
-
-```
 CONTACT_TO_EMAIL=franro1988@gmail.com
 RESEND_FROM_EMAIL=Muebleria 3R <website@muebleria3r.com>
 ```
 
-Before using `website@muebleria3r.com` as the sender, verify `muebleria3r.com` with Resend.
+The sending domain `muebleria3r.com` is verified with Resend. The website should be redeployed after any environment variable changes so the serverless function receives the latest values.
 
 ## Media
 
