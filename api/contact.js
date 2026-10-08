@@ -79,7 +79,7 @@ module.exports = async function handler(req, res) {
 
   const apiKey = process.env.RESEND_API_KEY;
   const toEmail = process.env.CONTACT_TO_EMAIL || "franro1988@gmail.com";
-  const fromEmail = process.env.RESEND_FROM_EMAIL || "Muebleria 3R <website@muebleria3r.com>";
+  const fromEmail = process.env.RESEND_FROM_EMAIL || "Furniture 3R <website@muebleria3r.com>";
 
   if (!apiKey) {
     console.error("RESEND_API_KEY is not configured.");
@@ -97,13 +97,13 @@ module.exports = async function handler(req, res) {
     language: escapeHtml(language)
   };
 
-  const subject = `New Muebleria 3R lead — ${projectType} — ${cityZip}`;
+  const subject = `New Furniture 3R lead — ${projectType} — ${cityZip}`;
 
   const html = `
     <div style="font-family:Arial,sans-serif;color:#171513;line-height:1.55;max-width:680px;margin:auto">
       <div style="background:#171513;color:#fff;padding:24px 28px;border-radius:14px 14px 0 0">
         <div style="font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#f3a11b;font-weight:700">New website lead</div>
-        <h1 style="margin:8px 0 0;font-size:28px">Muebleria 3R</h1>
+        <h1 style="margin:8px 0 0;font-size:28px">Furniture 3R</h1>
       </div>
       <div style="border:1px solid #e5ded4;border-top:0;padding:28px;border-radius:0 0 14px 14px;background:#fff">
         <table style="border-collapse:collapse;width:100%;font-size:15px">
