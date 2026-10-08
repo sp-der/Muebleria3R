@@ -1,6 +1,6 @@
-# Muebleria 3R
+# Furniture 3R
 
-Production website for **Muebleria 3R**.
+Production website for **Furniture 3R**.
 
 ## Business
 
@@ -33,7 +33,7 @@ Required Vercel environment variables:
 ```
 RESEND_API_KEY=re_...
 CONTACT_TO_EMAIL=franro1988@gmail.com
-RESEND_FROM_EMAIL=Muebleria 3R <website@muebleria3r.com>
+RESEND_FROM_EMAIL=Furniture 3R <website@muebleria3r.com>
 ```
 
 The sending domain `muebleria3r.com` is verified with Resend. The website should be redeployed after any environment variable changes so the serverless function receives the latest values.
